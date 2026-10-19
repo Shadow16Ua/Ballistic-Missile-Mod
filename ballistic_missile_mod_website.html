@@ -368,11 +368,12 @@
                 <div class="lg:col-span-6">
                     <div class="steel-panel corner-brackets rounded-lg p-2 shadow-2xl">
                         <div class="relative aspect-video rounded bg-[#0c1017] border border-[#2a3444] overflow-hidden">
-                            <iframe src="https://www.youtube.com/embed/qLr7gzv12p8?si=9vyoIE3BobrJyiSh&autoplay=0&rel=0&modestbranding=1&playsinline=1" 
-                                    title="YouTube video player" 
-                                    class="w-full h-full" 
-                                    frameborder="0" 
-                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                            <iframe src="https://www.youtube.com/embed/qLr7gzv12p8?rel=0&modestbranding=1&playsinline=1"
+                                    title="Ballistic Missile Mod trailer"
+                                    class="w-full h-full"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                                    referrerpolicy="strict-origin-when-cross-origin"
                                     allowfullscreen>
                             </iframe>
 
@@ -594,9 +595,9 @@
                             01
                         </div>
                         <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 01</span>
-                        <h3 class="text-2xl font-bold text-white mb-2">Build the 3x3 Launch Pad</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">Deploy the Launch Pad</h3>
                         <p class="text-slate-300 text-sm">
-                            Assemble the 3x3 multiblock Launch Pad structure on a clear firing site with unobstructed sky access.
+                            Place the animated 3D <strong class="text-white">Launch Pad</strong> on a clear firing site and position a <strong class="text-white">Coordinate Terminal</strong> within a 5-block radius.
                         </p>
                     </div>
 
@@ -606,9 +607,9 @@
                             02
                         </div>
                         <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 02</span>
-                        <h3 class="text-2xl font-bold text-white mb-2">Place a Missile</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">Load &amp; Elevate Rails</h3>
                         <p class="text-slate-300 text-sm">
-                            Mount either a <strong class="text-white">Standard Missile</strong> for medium-range tactical strikes or a <strong class="text-white">Heavy Missile</strong> for high-yield strategic devastation onto the pad.
+                            Right-click the pad to load a <strong class="text-white">Standard</strong> or <strong class="text-white">Heavy Missile</strong> onto the rails. For Heavy Missiles, right-click with an empty hand to raise the launcher vertically (90°).
                         </p>
                     </div>
 
@@ -618,9 +619,9 @@
                             03
                         </div>
                         <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 03</span>
-                        <h3 class="text-2xl font-bold text-white mb-2">Enter Coordinates</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">Lock Coordinates</h3>
                         <p class="text-slate-300 text-sm">
-                            Open the <strong class="text-white">Coordinate Terminal</strong>'s interactive screen and input your target coordinates.
+                            Enter target <strong class="text-white">X and Z</strong> coordinates in the <strong class="text-white">Coordinate Terminal</strong> (or Shift + Right-Click a block using the portable <strong class="text-white">Remote Control</strong>).
                         </p>
                     </div>
 
@@ -630,9 +631,9 @@
                             04
                         </div>
                         <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 04</span>
-                        <h3 class="text-2xl font-bold text-white mb-2">Launch</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">Trigger Ignition</h3>
                         <p class="text-slate-300 text-sm">
-                            Initiate ignition. Watch the physics-driven missile ascend and travel along its ballistic trajectory toward impact.
+                            Activate the terminal with a Redstone signal (button/lever) or Right-Click the pad with the <strong class="text-white">Remote Control</strong> to launch.
                         </p>
                     </div>
 
@@ -689,53 +690,49 @@
                     
                     <!-- Gallery Item 1 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+1+-+3x3+Launch+Pad+%26+Missiles', '3x3 Launch Pad with Standard and Heavy Missiles mounted')">
+                            onclick="openLightbox('./images/launchpad_terminal.webp', 'Launch Pad with coordinate terminal')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+1+(Launch+Pad)" 
-                             alt="3x3 Launch Pad with Missiles" 
+                        <img src="./images/launchpad_terminal.webp" 
+                             alt="Launch Pad with coordinate terminal" 
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
-                            <span>01 // 3x3 LAUNCH PAD &amp; MISSILES</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
+                            <span>01 // LAUNCH PAD &amp; COORDINATE TERMINAL</span>
                         </figcaption>
                     </figure>
 
                     <!-- Gallery Item 2 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+2+-+Coordinate+Terminal+UI', 'Coordinate Terminal interactive targeting screen')">
+                            onclick="openLightbox('./images/ballistic.webp', 'Ballistic Missile on the Launch Pad')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+2+(Coordinate+Terminal)" 
-                             alt="Coordinate Terminal Screen" 
+                        <img src="./images/ballistic.webp" 
+                             alt="Ballistic Missile on the LaunchPad" 
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
-                            <span>02 // COORDINATE TERMINAL SCREEN</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
+                            <span>02 // Ballistic Missile on the Launch Pad</span>
                         </figcaption>
                     </figure>
 
                     <!-- Gallery Item 3 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+3+-+Heavy+Missile+Ascent', 'Heavy Missile climbing to high altitude')">
+                            onclick="openLightbox('./images/ballistic_ready.webp', 'Ready Ballistic Missile on the Launch Pad')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+3+(Heavy+Missile+Launch)" 
-                             alt="Heavy Missile Launch" 
+                        <img src="./images/ballistic_ready.webp" 
+                             alt="Ready Ballistic Missile" 
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
-                            <span>03 // HEAVY MISSILE HIGH-ALTITUDE CLIMB</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
+                            <span>03 // Ready Ballistic Missile on the Launch Pad</span>
                         </figcaption>
                     </figure>
 
                     <!-- Gallery Item 4 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+4+-+Massive+Crater+%26+Scorched+Ground', 'Heavy Missile impact: massive crater, shockwave, shattered glass, and scorched ground')">
+                            onclick="openLightbox('./images/missile_ready.webp', 'Regular Missile on the Launch Pad')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+4+(Crater+%26+Scorched+Ground)" 
-                             alt="Heavy Missile Crater and Scorched Ground" 
+                        <img src="./images/missile_ready.webp" 
+                             alt="Regular Missile on the Launch Pad" 
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
                             <span>04 // CRATER, SHOCKWAVE &amp; SCORCHED GROUND</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
                         </figcaption>
                     </figure>
 
@@ -748,7 +745,6 @@
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
                             <span>05 // ANTI-AIR INTERCEPTOR LAUNCH</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
                         </figcaption>
                     </figure>
 
@@ -1145,44 +1141,37 @@
                                     <tr>
                                         <td class="py-3 px-4 font-semibold text-white">Standard Missile</td>
                                         <td class="py-3 px-4">Tactical Missile</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Medium-Range [TODO: exact blocks]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: radius]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: speed]</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Medium-Range (65° Rail Launch)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">8m Blast / 35m Lethal Shockwave (160 DMG)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">1.5 blocks/tick (Ascent) &rarr; 2.0 b/t (Terminal)</td>
                                     </tr>
                                     <tr>
                                         <td class="py-3 px-4 font-semibold text-white">Heavy Missile</td>
                                         <td class="py-3 px-4">High-Yield Strategic</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Long-Range / High Altitude [TODO]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Massive crater + shockwave [TODO]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Extreme terminal descent [TODO]</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Interceptor Missile</td>
-                                        <td class="py-3 px-4">Defensive Countermeasure</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: detection/intercept range]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: intercept yield]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: interceptor speed]</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Unlimited (90° Vertical Launch)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Massive Crater + 140m Seismic Wave + Thermal Burn</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Extreme Terminal Dive (2-Hit Armored Hull)</td>
                                     </tr>
                                     <tr>
                                         <td class="py-3 px-4 font-semibold text-white">Launch Pad</td>
-                                        <td class="py-3 px-4">Multiblock Structure</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-200">3x3 Multiblock</td>
+                                        <td class="py-3 px-4">Animated 3D Structure</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-200">3.4 x 4.2m Footprint (Dual-Mode Rails)</td>
                                         <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-500">65° Inclined / 90° Vertical</td>
                                     </tr>
                                     <tr>
                                         <td class="py-3 px-4 font-semibold text-white">Coordinate Terminal</td>
                                         <td class="py-3 px-4">Control Block</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: link distance]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">5-Block Radius Link to Launch Pad</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A (Redstone Triggered)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-500">Instant Ignition</td>
                                     </tr>
                                     <tr>
                                         <td class="py-3 px-4 font-semibold text-white">Anti-Air System</td>
                                         <td class="py-3 px-4">Automated Defense</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: radar range]</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">Fires Interceptors</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">[TODO: fire rate / cooldown]</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Automated Airspace Radar Scan</td>
+                                        <td class="py-3 px-4 text-slate-300">Fires Homing Interceptors</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Auto-Locks Incoming Threats</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1201,18 +1190,19 @@
                                     The <strong class="text-white">Standard Missile</strong> is a tactical missile built for medium-range engagements. It mounts onto the 3x3 Launch Pad and uses physics-driven projectile trajectory mechanics directed by the Coordinate Terminal.
                                 </p>
                                 <ul class="font-mono-tech text-xs space-y-1 text-slate-400">
-                                    <li>• ENGAGEMENT PROFILE: Medium-range tactical strike</li>
-                                    <li>• INTERCEPTION VULNERABILITY: Effectively countered by Anti-Air Systems</li>
-                                    <li>• BLAST STATS: <span class="text-orange-400">[TODO: Add exact damage/radius]</span></li>
+                                    <li>• LAUNCH MODE: Fires directly from 65° inclined rails (no vertical elevation required)</li>
+                                    <li>• FLIGHT SPEED: 0.35 &rarr; 1.5 blocks/tick climb; 2.0 blocks/tick terminal attack dive</li>
+                                    <li>• BLAST STATS: <span class="text-orange-400">8.0 Explosion Power | Up to 160 DMG (6m), lethal shockwave out to 35m | 90m Seismic Shake</span></li>
+                                    <li>• AUDIO RANGE: <span class="text-orange-400">200-block dynamic flyby sound &amp; incoming target warning</span></li>
                                 </ul>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients or image -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
@@ -1233,18 +1223,19 @@
                                     Impact produces a <strong class="text-white">massive crater, shockwave, shattered glass, and scorched ground</strong>. Due to its extreme descent speed, automated Anti-Air Systems struggle to intercept it in time.
                                 </p>
                                 <ul class="font-mono-tech text-xs space-y-1 text-slate-400">
-                                    <li>• FLIGHT PROFILE: High-altitude climb &rarr; Steep terminal descent</li>
-                                    <li>• IMPACT EFFECTS: Massive crater, shockwave, shattered glass, scorched ground</li>
-                                    <li>• YIELD STATS: <span class="text-orange-400">[TODO: Add exact crater radius/damage]</span></li>
+                                    <li>• LAUNCH REQUIREMENT: Must be raised to 90° vertical position (Right-click pad with empty hand)</li>
+                                    <li>• ARMOR RATING: <span class="text-orange-400">Reinforced hull (2 Armor Points) — survives a single Interceptor hit!</span></li>
+                                    <li>• YIELD &amp; EFFECTS: <span class="text-orange-400">Unblockable sphere crater | Thermal burn &amp; scorched blocks | 140m Earthquake &amp; Blinding Flash</span></li>
+                                    <li>• AUDIO RANGE: <span class="text-orange-400">300-block flyby roar &amp; dual-layer long-range detonation audio</span></li>
                                 </ul>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
@@ -1263,16 +1254,17 @@
                                 </p>
                                 <ul class="font-mono-tech text-xs space-y-1 text-slate-400">
                                     <li>• LAUNCH PLATFORM: Automated Anti-Air System</li>
-                                    <li>• INTERCEPT STATS: <span class="text-orange-400">[TODO: Add exact speed/range]</span></li>
+                                    <li>• INTERCEPT STATS: <span class="text-orange-400">5.2 blocks/tick velocity | 5.5-block Proximity Fuze | 8s (160 ticks) self-destruct timer</span></li>
+                                    <li>• DAMAGE LOGIC: <span class="text-orange-400">Destroys Standard Missiles in 1 hit; strips 1 armor layer from Heavy Missiles</span></li>
                                 </ul>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-orange-400 mb-2">CREATIVE / SURVIVAL RECIPE SOON</span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
@@ -1291,12 +1283,12 @@
                                 </p>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE </span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
@@ -1315,12 +1307,12 @@
                                 </p>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
@@ -1339,12 +1331,12 @@
                                 </p>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
-                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE [TODO]</span>
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
                                 <!-- TODO: Replace [TODO] slots with actual crafting ingredients -->
                                 <div class="mc-crafting-grid">
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
-                                    <div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div><div class="mc-slot">[TODO]</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                 </div>
                             </div>
                         </div>
