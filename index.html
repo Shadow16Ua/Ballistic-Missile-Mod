@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==========================================
+         SEO, CANONICAL & OPEN GRAPH META TAGS
+         NOTE: Ensure your GitHub repo is named "ballistic-missile-mod"
+         so GitHub Pages publishes to https://shadow16ua.github.io/ballistic-missile-mod/
+    =========================================== -->
+    <title>Ballistic Missile Mod (1.20.1 Forge) — ICBM, Anti-Air & Launch Pads | Shadow_Ua</title>
+    <meta name="description" content="Download the Ballistic Missile Mod for Minecraft Java 1.20.1 (Forge). Adds physics-driven Standard & Heavy Missiles, 3D Launch Pads, Coordinate Terminals, and automated Anti-Air Interceptor Systems by Shadow_Ua.">
+    <meta name="author" content="Shadow_Ua">
+    <meta name="keywords" content="Minecraft mod, Ballistic Missile Mod, Forge 1.20.1, GeckoLib 4, Shadow_Ua, Minecraft missiles, Modrinth, Minecraft ICBM mod, Anti-Air System">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://shadow16ua.github.io/ballistic-missile-mod/">
+
+    <!-- Open Graph / Discord & Social Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ballistic Missile Mod">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://shadow16ua.github.io/ballistic-missile-mod/">
+    <meta property="og:title" content="Ballistic Missile Mod — Minecraft Java 1.20.1 (Forge)">
+    <meta property="og:description" content="Take control of the skies and redefine warfare in Minecraft. Physics-driven ballistic missiles, animated 3D Launch Pads, Coordinate Terminals, and Anti-Air Systems.">
+    <meta property="og:image" content="https://shadow16ua.github.io/ballistic-missile-mod/images/ballistic_ready.webp">
+    <meta property="og:image:alt" content="Ready Ballistic Missile on the 3D Launch Pad in Minecraft 1.20.1">
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ballistic Missile Mod — Minecraft Java 1.20.1 (Forge)">
+    <meta name="twitter:description" content="Physics-driven ballistic weapons, 3D Launch Pads, Coordinate Terminals, and automated Anti-Air defense for Minecraft 1.20.1 Forge.">
+    <meta name="twitter:image" content="https://shadow16ua.github.io/ballistic-missile-mod/images/ballistic_ready.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2311161d' stroke='%23ff5500' stroke-width='2'/><path d='M16 5 L22 17 L19 17 L19 25 L13 25 L13 17 L10 17 Z' fill='%23ff5500'/></svg>">
+
+    <!-- Google Fonts: Rajdhani (Condensed Tactical Headings), Inter (Clean Body), JetBrains Mono (Coordinates/Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ==========================================
+         JSON-LD STRUCTURED DATA (Rich Snippets)
+    =========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Ballistic Missile Mod",
+          "operatingSystem": "Windows, macOS, Linux (Minecraft Java Edition 1.20.1)",
+          "applicationCategory": "GameApplication",
+          "applicationSubCategory": "Minecraft Forge Mod",
+          "softwareVersion": "5.0.0-BETA",
+          "softwareRequirements": "Minecraft Java 1.20.1, Minecraft Forge, GeckoLib 4",
+          "author": {
+            "@type": "Person",
+            "name": "Shadow_Ua",
+            "url": "https://modrinth.com/user/Shadow_Ua",
+            "sameAs": [
+              "https://github.com/Shadow16Ua",
+              "https://www.curseforge.com/members/shadow_uayt333/projects"
+            ]
+          },
+          "description": "Adds long-range physics-driven ballistic weapons, animated 3D launch platforms, coordinate-based targeting terminals, and automated anti-air defense systems to Minecraft 1.20.1 Forge.",
+          "downloadUrl": "https://modrinth.com/mod/ballistic-missile-mod/versions",
+          "installUrl": "https://www.curseforge.com/minecraft/mc-mods/ballistic-missile-mod",
+          "screenshot": "https://shadow16ua.github.io/ballistic-missile-mod/images/launchpad_terminal.webp",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Ballistic Missile Mod Official Trailer — Minecraft 1.20.1 Forge",
+          "description": "Official showcase trailer for the Ballistic Missile Mod by Shadow_Ua, demonstrating Standard Missiles, Heavy Missiles, 3D Launch Pads, and Anti-Air Interceptors.",
+          "thumbnailUrl": [
+            "https://i.ytimg.com/vi/qLr7gzv12p8/maxresdefault.jpg"
+          ],
+          "uploadDate": "2026-10-19",
+          "embedUrl": "https://www.youtube.com/embed/qLr7gzv12p8",
+          "contentUrl": "https://www.youtube.com/watch?v=qLr7gzv12p8"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Which Minecraft versions and mod loaders are supported?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ballistic Missile Mod is built for Minecraft Java Edition 1.20.1 running on Forge, and requires GeckoLib 4 to be installed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the mod work in Multiplayer / on Servers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both the server and all connecting players must have Ballistic Missile Mod and GeckoLib 4 installed on Forge 1.20.1."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it compatible with other mods or shaders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The mod requires GeckoLib 4 on Forge 1.20.1."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I report bugs or suggest features?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can report bugs or share feedback via our community links below (Discord or GitHub issue tracker). Please include your Minecraft version (1.20.1), Forge version, GeckoLib 4 version, and crash logs if applicable."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- ==========================================
+         CUSTOM TACTICAL STYLESHEET
+    =========================================== -->
+    <style id="main-stylesheet">
+        :root {
+            --bg-near-black: #0a0c10;
+            --bg-panel: #141922;
+            --bg-panel-hover: #1b222e;
+            --steel-border: #2a3444;
+            --accent-orange: #ff5500;
+            --accent-red: #dc2626;
+            --accent-glow: rgba(255, 85, 0, 0.35);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+        }
+
+        * {box-sizing: border-box;}
+
+        body {
+            background-color: var(--bg-near-black);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-tactical {
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .font-mono-tech {font-family: 'JetBrains Mono', monospace;}
+
+        /* Tactical Radar & Grid Background Overlay */
+        .tactical-bg {
+            background-color: var(--bg-near-black);
+            background-image: 
+                radial-gradient(circle at 50% 25%, rgba(255, 85, 0, 0.08) 0%, transparent 55%),
+                radial-gradient(circle at 50% 25%, transparent 29%, rgba(42, 52, 68, 0.22) 30%, transparent 31%),
+                radial-gradient(circle at 50% 25%, transparent 59%, rgba(42, 52, 68, 0.14) 60%, transparent 61%),
+                linear-gradient(to right, rgba(42, 52, 68, 0.18) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(42, 52, 68, 0.18) 1px, transparent 1px);
+            background-size: 100% 100%, 800px 800px, 800px 800px, 40px 40px, 40px 40px;
+            background-position: center top;
+        }
+
+        /* Steel Grey Panels with Tactical Corner Accents */
+        .steel-panel {
+            background-color: var(--bg-panel);
+            border: 1px solid var(--steel-border);
+            position: relative;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        }
+
+        .steel-panel:hover {
+            border-color: rgba(255, 85, 0, 0.6);
+            box-shadow: 0 8px 28px -6px rgba(255, 85, 0, 0.18);
+            background-color: var(--bg-panel-hover);
+        }
+
+        .card-hover-lift:hover {transform: translateY(-4px);}
+
+        /* Corner Bracket Decorators */
+        .corner-brackets::before,
+        .corner-brackets::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-color: var(--accent-orange);
+            pointer-events: none;
+            opacity: 0.75;
+        }
+        .corner-brackets::before {
+            top: -1px;
+            left: -1px;
+            border-top: 2px solid var(--accent-orange);
+            border-left: 2px solid var(--accent-orange);
+        }
+        .corner-brackets::after {
+            bottom: -1px;
+            right: -1px;
+            border-bottom: 2px solid var(--accent-orange);
+            border-right: 2px solid var(--accent-orange);
+        }
+
+        /* Explosion Glow Buttons */
+        .btn-explosion {
+            background: linear-gradient(135deg, #ff6a00 0%, #dc2626 100%);
+            color: #ffffff;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 160, 100, 0.4);
+            box-shadow: 0 0 20px rgba(255, 85, 0, 0.35);
+            transition: all 0.2s ease;
+        }
+
+        .btn-explosion:hover {
+            box-shadow: 0 0 30px rgba(255, 85, 0, 0.65);
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+        }
+
+        .btn-steel {
+            background-color: #1c2430;
+            color: #f1f5f9;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid #3b485c;
+            transition: all 0.2s ease;
+        }
+
+        .btn-steel:hover {
+            border-color: var(--accent-orange);
+            color: #ff7733;
+            background-color: #232d3b;
+            transform: translateY(-2px);
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Minecraft 3x3 Crafting Grid Styling for Wiki */
+        .mc-crafting-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 56px);
+            grid-template-rows: repeat(3, 56px);
+            gap: 6px;
+            background-color: #0d1117;
+            padding: 10px;
+            border: 2px solid #2a3444;
+            border-radius: 6px;
+        }
+
+        .mc-slot {
+            background-color: #1a212d;
+            border: 1px inset #334155;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #fb923c;
+            text-align: center;
+            padding: 2px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {background: #0a0c10;}
+        ::-webkit-scrollbar-thumb {
+            background: #2a3444;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {background: #ff5500;}
+    </style>
+</head>
+<body class="tactical-bg min-h-screen flex flex-col selection:bg-orange-500 selection:text-black">
+
+    <!-- 1. STICKY NAVBAR -->
+    <header class="sticky top-0 z-40 bg-[#0a0c10]/90 backdrop-blur-md border-b border-[#2a3444]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo / Name -->
+            <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+                <div class="w-9 h-9 rounded bg-[#141922] border border-orange-500/60 flex items-center justify-center shadow-[0_0_12px_rgba(255,85,0,0.25)] group-hover:border-orange-400 transition">
+                    <!-- Tactical Missile SVG Logo -->
+                    <svg class="w-5 h-5 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L15.5 9.5L15.5 17L18 20L18 22L12 20.5L6 22L6 20L8.5 17L8.5 9.5L12 2Z" />
+                        <line x1="12" y1="9" x2="12" y2="14" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <span class="font-tactical text-lg sm:text-xl font-bold tracking-wider text-white block leading-none">
+                        BALLISTIC <span class="text-orange-500">MISSILE</span>
+                    </span>
+                    <span class="font-mono-tech text-[9px] text-slate-400 tracking-widest uppercase leading-none mt-0.5">
+                        FORGE 1.20.1 // SHADOW_UA
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300" aria-label="Main Navigation">
+                <a href="#features" class="hover:text-orange-400 transition">Features</a>
+                <a href="#how-it-works" class="hover:text-orange-400 transition">How It Works</a>
+                <a href="#gallery" class="hover:text-orange-400 transition">Gallery</a>
+                <a href="#install" class="hover:text-orange-400 transition">Install</a>
+                <a href="#changelog" class="hover:text-orange-400 transition">Changelog</a>
+                <a href="#faq" class="hover:text-orange-400 transition">FAQ</a>
+                
+                <!-- Wiki Page Link -->
+                <a href="wiki.html" id="nav-wiki-btn"  class="flex items-center gap-1.5 px-3 py-1 rounded bg-[#1a222d] border border-[#334155] text-orange-400 hover:bg-orange-500/10 hover:border-orange-500 transition font-mono-tech text-xs uppercase">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    <span>Wiki</span>
+                </a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://modrinth.com/mod/ballistic-missile-mod/versions" target="_blank" rel="noopener noreferrer" class="btn-explosion px-4 py-2 rounded text-sm inline-flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Download
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded bg-[#141922] border border-[#2a3444] text-slate-200 hover:text-orange-500 focus:outline-none" aria-label="Toggle Menu" aria-expanded="false">
+                <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0e1218] border-b border-[#2a3444] px-4 pt-3 pb-5 space-y-2">
+            <a href="#features" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">Features</a>
+            <a href="#how-it-works" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">How It Works</a>
+            <a href="#gallery" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">Gallery</a>
+            <a href="#install" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">Install</a>
+            <a href="#changelog" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">Changelog</a>
+            <a href="#faq" onclick="closeMobileMenu()" class="block py-2 px-3 rounded hover:bg-[#1a222d] text-slate-200">FAQ</a>
+            <a href="wiki.html"  class="block w-full text-left py-2 px-3 rounded bg-[#1a222d] text-orange-400 font-mono-tech text-sm">
+                → Open Tactical Wiki
+            </a>
+            <div class="pt-2">
+                <a href="https://modrinth.com/mod/ballistic-missile-mod" target="_blank" rel="noopener noreferrer" class="btn-explosion w-full py-2.5 rounded text-center block">Download Mod</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         VIEW 1: MAIN LANDING PAGE
+    ====================================================================== -->
+    <main id="view-home" class="flex-grow">
+
+        <!-- ==========================================
+             2. HERO SECTION
+        =========================================== -->
+        <section id="hero" class="relative py-8 md:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444]">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Title, Tagline, Download Buttons -->
+                <div class="lg:col-span-6 space-y-6">
+                    <!-- Metadata Badges -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="px-3 py-1 rounded bg-orange-500/10 border border-orange-500/40 text-orange-400 font-mono-tech text-xs font-semibold">
+                            MINECRAFT JAVA 1.20.1
+                        </span>
+                        <span class="px-3 py-1 rounded bg-[#141922] border border-[#2a3444] text-slate-300 font-mono-tech text-xs">
+                            LOADER: FORGE
+                        </span>
+                        <span class="px-3 py-1 rounded bg-[#141922] border border-[#2a3444] text-slate-300 font-mono-tech text-xs">
+                            REQUIRES: GECKOLIB 4
+                        </span>
+                    </div>
+
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none text-white">
+                        BALLISTIC <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-red-600">MISSILE</span> MOD
+                    </h1>
+
+                    <!-- Required One-Line Tagline -->
+                    <p class="text-xl sm:text-2xl text-slate-200 font-medium leading-snug border-l-4 border-orange-500 pl-4">
+                        Take control of the skies and redefine warfare in Minecraft.
+                    </p>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        Replaces standard TNT mechanics with long-range, physics-driven projectile entities, multiblock launch platforms, coordinate-based targeting terminals, and automated anti-air interception systems. Created by <strong class="text-slate-200">Shadow_Ua</strong>.
+                    </p>
+
+                    <!-- Primary CTA Buttons -->
+                    <div id="download-cta" class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="https://modrinth.com/mod/ballistic-missile-mod/versions" target="_blank" rel="noopener noreferrer" class="btn-explosion px-7 py-4 rounded text-lg inline-flex items-center justify-center gap-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm1-13h-2v6H8l4 4 4-4h-3z"/></svg>
+                            Download on Modrinth
+                        </a>
+
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/ballistic-missile-mod" target="_blank" rel="noopener noreferrer" class="btn-steel px-7 py-4 rounded text-lg inline-flex items-center justify-center gap-3">
+                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                            Download on CurseForge
+                        </a>
+                    </div>
+
+                    <div class="pt-1 flex items-center gap-4 text-xs font-mono-tech text-slate-400">
+                        <span>AUTHOR: SHADOW_UA</span>
+                        <span>•</span>
+                        <a href="wiki.html"  class="text-orange-400 hover:underline">
+                            READ TACTICAL WIKI &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Trailer Video (YouTube Embed) -->
+                <div class="lg:col-span-6">
+                    <div class="steel-panel corner-brackets rounded-lg p-2 shadow-2xl">
+                        <div class="relative aspect-video rounded bg-[#0c1017] border border-[#2a3444] overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/qLr7gzv12p8?rel=0&modestbranding=1&playsinline=1"
+                                    title="Ballistic Missile Mod trailer"
+                                    class="w-full h-full"
+                                    loading="lazy"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                            </iframe>
+
+                            <!-- HUD Telemetry Footer Bar -->
+                            <div class="absolute bottom-0 left-0 right-0 flex justify-between items-center text-[11px] font-mono-tech text-slate-300 bg-gradient-to-t from-black/80 to-transparent px-3 py-2 pointer-events-none">
+                                <span>CAM_FEED // TRAILER_BROADCAST</span>
+                                <span class="text-orange-400">STATUS: LIVE FOOTAGE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. FEATURES SECTION (6 Cards)
+        =========================================== -->
+        <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444]">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
+                    <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                        // ORDNANCE &amp; INFRASTRUCTURE
+                    </span>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                        TACTICAL ARSENAL &amp; SYSTEMS
+                    </h2>
+                    <p class="text-slate-400 mt-3">
+                        Physics-driven ballistic weapons and ground control blocks engineered for long-range engagements in Minecraft 1.20.1.
+                    </p>
+                </div>
+
+                <!-- 6-Card Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1: Standard Missile -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-orange-500/10 border border-orange-500/40 flex items-center justify-center text-orange-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l3 6v8l2 2v2H7v-2l2-2V9l3-6z"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-slate-300">
+                                    ORDNANCE // 01
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Standard Missile</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Tactical missile designed for medium-range engagements. Replaces standard TNT mechanics with a physics-driven projectile entity launched from a Launch Pad.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>ROLE: MEDIUM-RANGE TACTICAL</span>
+                            <a href="wiki.html#wiki-standard-missile" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Heavy Missile -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-red-500/15 border border-red-500/50 flex items-center justify-center text-red-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L16 9v8l3 3v2H5v-2l3-3V9l4-7z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-red-950/60 border border-red-700/50 text-red-300">
+                                    STRATEGIC // 02
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Heavy Missile</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                High-yield strategic missile that climbs to high altitude before entering a steep terminal descent. Detonation creates a massive crater, shockwave, shattered glass, and scorched ground.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>ROLE: HIGH-YIELD STRATEGIC</span>
+                            <a href="wiki.html#wiki-heavy-missile" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Interceptor Missile -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-orange-500/10 border border-orange-500/40 flex items-center justify-center text-orange-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-slate-300">
+                                    DEFENSE // 03
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Interceptor Missile</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Defensive countermeasure projectile fired automatically by Anti-Air systems to intercept and shoot down incoming missile threats in mid-air.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>ROLE: AUTOMATED COUNTERMEASURE</span>
+                            <a href="wiki.html#wiki-interceptor-missile" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Launch Pad -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-orange-500/10 border border-orange-500/40 flex items-center justify-center text-orange-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                        <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-slate-300">
+                                    STRUCTURE // 04
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Launch Pad</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Heavy-duty 3x3 multiblock structure required to mount, stabilize, and fire ballistic missiles toward designated target coordinates.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>FOOTPRINT: 3x3 MULTIBLOCK</span>
+                            <a href="wiki.html#wiki-launch-pad" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Coordinate Terminal -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-orange-500/10 border border-orange-500/40 flex items-center justify-center text-orange-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <rect x="2" y="4" width="20" height="14" rx="2"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 21h8M12 18v3M6 9l3 3-3 3M11 15h4"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-slate-300">
+                                    CONTROL // 05
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Coordinate Terminal</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Dedicated fire-control block equipped with an interactive screen to input exact target coordinates and initiate launch sequences.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>INTERFACE: INTERACTIVE SCREEN</span>
+                            <a href="wiki.html#wiki-coordinate-terminal" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Anti-Air System -->
+                    <article class="steel-panel card-hover-lift corner-brackets rounded-lg p-6 flex flex-col justify-between reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded bg-orange-500/10 border border-orange-500/40 flex items-center justify-center text-orange-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9"/>
+                                        <circle cx="12" cy="12" r="4"/>
+                                        <path stroke-linecap="round" d="M12 12l6-6"/>
+                                    </svg>
+                                </div>
+                                <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-slate-300">
+                                    DEFENSE // 06
+                                </span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Anti-Air System</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Automated defense installation that launches Interceptor Missiles. Very effective against Standard Missiles, but struggles against the extreme descent speed of Heavy Missiles.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#242e3d] flex items-center justify-between text-xs font-mono-tech text-slate-400">
+                            <span>MODE: AUTOMATED INTERCEPTION</span>
+                            <a href="wiki.html#wiki-anti-air-system" class="text-orange-400 hover:underline">SPECS &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. HOW IT WORKS (4 Steps + Optional AA Step)
+        =========================================== -->
+        <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444] bg-[#0c1016]/70">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
+                    <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                        // LAUNCH SEQUENCE PROTOCOL
+                    </span>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                        HOW IT WORKS
+                    </h2>
+                    <p class="text-slate-400 mt-3">
+                        Deploy coordinate-targeted strikes in four operational steps, plus optional automated airspace defense.
+                    </p>
+                </div>
+
+                <!-- 4 Core Steps Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Step 1 -->
+                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                        <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
+                            01
+                        </div>
+                        <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 01</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Deploy the Launch Pad</h3>
+                        <p class="text-slate-300 text-sm">
+                            Place the animated 3D <strong class="text-white">Launch Pad</strong> on a clear firing site and position a <strong class="text-white">Coordinate Terminal</strong> within a 5-block radius <span class="text-xs text-slate-400 font-mono-tech">(v5.0.0+; 3 blocks in older versions)</span>.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                        <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
+                            02
+                        </div>
+                        <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 02</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Load &amp; Elevate Rails</h3>
+                        <p class="text-slate-300 text-sm">
+                            Right-click the pad to load a <strong class="text-white">Standard</strong> or <strong class="text-white">Heavy Missile</strong> onto the rails. For Heavy Missiles, right-click with an empty hand to raise the launcher vertically (90°).
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                        <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
+                            03
+                        </div>
+                        <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 03</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Lock Coordinates</h3>
+                        <p class="text-slate-300 text-sm">
+                            Enter target <strong class="text-white">X and Z</strong> coordinates in the <strong class="text-white">Coordinate Terminal</strong> (or Shift + Right-Click a block using the portable <strong class="text-white">Remote Control</strong>).
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                        <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
+                            04
+                        </div>
+                        <span class="font-mono-tech text-xs text-orange-400 uppercase block mb-2">Step 04</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Trigger Ignition</h3>
+                        <p class="text-slate-300 text-sm">
+                            Activate the terminal with a Redstone signal (button/lever) or Right-Click the pad with the <strong class="text-white">Remote Control</strong> to launch.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Optional Step: Anti-Air Defense -->
+                <div class="mt-6 steel-panel corner-brackets rounded-lg p-6 border-l-4 border-l-orange-500 reveal-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="px-2 py-0.5 rounded bg-orange-500/20 text-orange-400 font-mono-tech text-xs uppercase font-semibold">
+                                    Optional Defense Step
+                                </span>
+                                <span class="font-mono-tech text-xs text-slate-400">// COUNTER-BATTERY</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Deploy an Anti-Air System</h3>
+                            <p class="text-slate-300 text-sm mt-1">
+                                Protect your base by setting up an automated <strong class="text-white">Anti-Air System</strong> stocked with <strong class="text-white">Interceptor Missiles</strong>. It automatically fires to shoot down incoming threats—offering strong protection against Standard Missiles, though it struggles against the extreme terminal descent speed of Heavy Missiles.
+                            </p>
+                        </div>
+                        <a href="wiki.html#wiki-tactical-tips" class="btn-steel px-5 py-2.5 rounded text-sm shrink-0 text-center">
+                            Read AA vs Heavy Tips &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. GALLERY SECTION (With Lightbox)
+        =========================================== -->
+        <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444]">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal-on-scroll">
+                    <div>
+                        <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                            // RECONNAISSANCE IMAGERY
+                        </span>
+                        <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                            IN-GAME GALLERY
+                        </h2>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 md:mt-0 font-mono-tech">
+                        Click any screenshot to inspect in full-screen lightbox.
+                    </p>
+                </div>
+
+                <!-- =========================================================
+                     SCREENSHOT GALLERY
+                     TODO: Replace remaining placeholder images #5 and #6 when ready
+                ========================================================== -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Gallery Item 1 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('./images/launchpad_terminal.webp', 'Launch Pad with coordinate terminal')">
+                        <img src="./images/launchpad_terminal.webp" 
+                             alt="Launch Pad with coordinate terminal in Minecraft 1.20.1 Ballistic Missile Mod" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>01 // LAUNCH PAD &amp; COORDINATE TERMINAL</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Gallery Item 2 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('./images/ballistic.webp', 'Ballistic Missile on the Launch Pad')">
+                        <img src="./images/ballistic.webp" 
+                             alt="Ballistic Missile mounted on the Launch Pad in Minecraft" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>02 // Ballistic Missile on the Launch Pad</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Gallery Item 3 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('./images/ballistic_ready.webp', 'Ready Ballistic Missile on the Launch Pad')">
+                        <img src="./images/ballistic_ready.webp" 
+                             alt="Ready Heavy Ballistic Missile elevated at 90 degrees on the Launch Pad" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>03 // Ready Ballistic Missile on the Launch Pad</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Gallery Item 4 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('./images/missile_ready.webp', 'Regular Missile on the Launch Pad')">
+                        <img src="./images/missile_ready.webp" 
+                             alt="Standard Tactical Missile ready for launch on inclined rails" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>04 // CRATER, SHOCKWAVE &amp; SCORCHED GROUND</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Gallery Item 5 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+5+-+Anti-Air+System+Firing+Interceptor', 'Automated Anti-Air System launching an Interceptor Missile')">
+                        <!-- TODO: Replace placeholder image URL -->
+                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+5+(Anti-Air+Interceptor)" 
+                             alt="Anti-Air System launching Interceptor Missile" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>05 // ANTI-AIR INTERCEPTOR LAUNCH</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Gallery Item 6 -->
+                    <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
+                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+6+-+Mid-Air+Interception', 'Interceptor Missile shooting down an incoming Standard Missile')">
+                        <!-- TODO: Replace placeholder image URL -->
+                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+6+(Mid-Air+Interception)" 
+                             alt="Mid-air interception of incoming missile threat" 
+                             width="640" height="360" loading="lazy" decoding="async"
+                             class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                        <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
+                            <span>06 // MID-AIR THREAT INTERCEPTION</span>
+                            <span class="text-orange-400">[REPLACE IMG]</span>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. REQUIREMENTS & INSTALLATION
+        =========================================== -->
+        <section id="install" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444] bg-[#0c1016]/70">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
+                    <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                        // SYSTEM DEPLOYMENT
+                    </span>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                        REQUIREMENTS &amp; INSTALLATION
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- System Requirements Panel -->
+                    <div class="lg:col-span-5 steel-panel corner-brackets rounded-lg p-6 space-y-5 reveal-on-scroll">
+                        <h3 class="text-2xl font-bold text-white border-b border-[#2a3444] pb-3">
+                            Mandatory Requirements
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3.5 rounded bg-[#0c1017] border border-[#2a3444]">
+                                <div>
+                                    <span class="text-xs font-mono-tech text-slate-400 block">GAME EDITION</span>
+                                    <strong class="text-white">Minecraft: Java Edition</strong>
+                                </div>
+                                <span class="px-3 py-1 rounded bg-orange-500/20 text-orange-400 font-mono-tech text-sm font-bold">
+                                    1.20.1
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3.5 rounded bg-[#0c1017] border border-[#2a3444]">
+                                <div>
+                                    <span class="text-xs font-mono-tech text-slate-400 block">MOD LOADER</span>
+                                    <strong class="text-white">Minecraft Forge</strong>
+                                </div>
+                                <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded bg-[#1b2330] hover:bg-orange-500 hover:text-black text-slate-200 font-mono-tech text-xs transition">
+                                    FORGE 1.20.1 &rarr;
+                                </a>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3.5 rounded bg-[#0c1017] border border-orange-500/40">
+                                <div>
+                                    <span class="text-xs font-mono-tech text-orange-400 block">REQUIRED DEPENDENCY</span>
+                                    <strong class="text-white">GeckoLib 4</strong>
+                                </div>
+                                <a href="https://modrinth.com/mod/geckolib/versions" target="_blank" rel="noopener noreferrer" class="px-3 py-1 rounded bg-orange-500 text-black font-mono-tech text-xs font-bold hover:brightness-110 transition">
+                                    GET GECKOLIB 4 &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Numbered Installation Steps -->
+                    <div class="lg:col-span-7 steel-panel rounded-lg p-6 space-y-5 reveal-on-scroll">
+                        <h3 class="text-2xl font-bold text-white border-b border-[#2a3444] pb-3">
+                            Installation Steps
+                        </h3>
+
+                        <ol class="space-y-4">
+                            <li class="flex gap-4 items-start">
+                                <span class="w-8 h-8 rounded bg-orange-500 text-black font-mono-tech font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">Install Minecraft Forge (1.20.1)</h4>
+                                    <p class="text-sm text-slate-300">Ensure you have Minecraft Java Edition 1.20.1 installed along with the matching Forge mod loader profile.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <span class="w-8 h-8 rounded bg-orange-500 text-black font-mono-tech font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">Download Required Files</h4>
+                                    <p class="text-sm text-slate-300">Download the <strong class="text-white">Ballistic Missile Mod</strong> <code class="text-orange-400">.jar</code> file (from Modrinth or CurseForge) and the <strong class="text-white">GeckoLib 4</strong> <code class="text-orange-400">.jar</code> file for Forge 1.20.1.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <span class="w-8 h-8 rounded bg-orange-500 text-black font-mono-tech font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">Place in Your Mods Folder</h4>
+                                    <p class="text-sm text-slate-300">Copy both <code class="text-orange-400">.jar</code> files into your <code class="bg-[#0c1017] px-2 py-0.5 rounded border border-[#2a3444] font-mono-tech text-xs">.minecraft/mods</code> directory.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <span class="w-8 h-8 rounded bg-orange-500 text-black font-mono-tech font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">Launch &amp; Play</h4>
+                                    <p class="text-sm text-slate-300">Start Minecraft using the Forge 1.20.1 profile and verify both mods are loaded.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             7. SIMPLE CHANGELOG SECTION
+        =========================================== -->
+        <section id="changelog" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444]">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 reveal-on-scroll">
+                    <div>
+                        <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                            // VERSION HISTORY
+                        </span>
+                        <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                            CHANGELOG
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="steel-panel rounded-lg p-6 reveal-on-scroll">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#2a3444] pb-3 mb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="px-2.5 py-0.5 rounded bg-orange-500 text-black font-mono-tech text-xs font-bold">
+                                    v5.0.0 BETA
+                                </span>
+                                <h3 class="text-xl font-bold text-white">The Audio-Visual Overhaul &amp; New Launch Mechanics</h3>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <a href="https://modrinth.com/mod/ballistic-missile-mod" target="_blank" rel="noopener noreferrer" class="text-orange-400 hover:underline font-mono-tech text-xs">
+                                    Download on Modrinth &rarr;
+                                </a>
+                                <span class="font-mono-tech text-xs text-slate-400">DATE: 2026-10-19 // MC 1.20.1 Forge</span>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1.5">
+                            <li><span class="text-orange-400 font-mono-tech">[NEW]</span> <strong>Animated 3D Launch Pad:</strong> Missiles now load directly onto inclined launcher rails via Right-Click; Heavy Missiles require raising the arm to a 90° vertical position before firing.</li>
+                            <li><span class="text-orange-400 font-mono-tech">[AUDIO]</span> <strong>Sound Overhaul:</strong> Added custom launch ignition, in-flight flyby audio (up to 300 blocks), incoming warning sounds, mid-air interception blasts, and distant explosions.</li>
+                            <li><span class="text-orange-400 font-mono-tech">[VFX]</span> <strong>Next-Gen Explosions &amp; Thermal Burn:</strong> Added dynamic shockwaves, seismic camera shake, terrain-occluded blinding flashes, custom crater carving, and scorched earth/fire effects.</li>
+                            <li><span class="text-orange-400 font-mono-tech">[DEFENSE]</span> <strong>Upgraded Anti-Air &amp; Interceptors:</strong> Improved predictive lead-targeting (5.2 b/t speed, 5.5m proximity fuze) and 3D mid-air smoke cloud detonations.</li>
+                            <li><span class="text-orange-400 font-mono-tech">[FIX]</span> <strong>Flight &amp; Terminal Sync:</strong> Eliminated initial launch teleporting/jitter using Forge spawn data synchronization and updated Coordinate Terminal detection to a 5-block radius.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Full Changelog Link -->
+                    <div class="steel-panel rounded-lg p-6 reveal-on-scroll text-center">
+                        <p class="text-sm text-slate-300 mb-3">
+                            View the complete version history and all past updates.
+                        </p>
+                        <a href="https://modrinth.com/mod/ballistic-missile-mod/changelog" target="_blank" rel="noopener noreferrer" class="btn-steel px-6 py-2.5 rounded inline-flex items-center gap-2 text-sm font-mono-tech">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            Full Changelog on Modrinth
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             8. FAQ ACCORDION
+        =========================================== -->
+        <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2a3444] bg-[#0c1016]/70">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 reveal-on-scroll">
+                    <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                        // INTEL BRIEFING
+                    </span>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-white">
+                        FREQUENTLY ASKED QUESTIONS
+                    </h2>
+                </div>
+
+                <div class="space-y-4" id="faq-accordion">
+                    
+                    <!-- FAQ 1: Versions -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">Which Minecraft versions and mod loaders are supported?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            Ballistic Missile Mod is built for <strong class="text-white">Minecraft Java Edition 1.20.1</strong> running on <strong class="text-white">Forge</strong>, and requires <strong class="text-white">GeckoLib 4</strong> to be installed.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2: Multiplayer / Server Support -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">Does the mod work in Multiplayer / on Servers?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            Both the server and all connecting players must have <strong class="text-white">Ballistic Missile Mod</strong> and <strong class="text-white">GeckoLib 4</strong> installed on Forge 1.20.1.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3: Compatibility -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">Is it compatible with other mods or shaders?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            The mod requires <strong class="text-white">GeckoLib 4</strong> on Forge 1.20.1.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4: How to Report Bugs -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">How do I report bugs or suggest features?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            You can report bugs or share feedback via our community links below (Discord or GitHub issue tracker). Please include your Minecraft version (1.20.1), Forge version, GeckoLib 4 version, and crash logs if applicable.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             9. COMMUNITY & SUPPORT
+        =========================================== -->
+        <section id="community" class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto steel-panel corner-brackets rounded-xl p-8 sm:p-12 text-center reveal-on-scroll">
+                <span class="font-mono-tech text-xs uppercase tracking-widest text-orange-500 block mb-2">
+                    // COMMUNICATIONS &amp; SUPPORT
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+                    JOIN THE COMMAND NETWORK
+                </h2>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-8">
+                    Follow development updates by <strong class="text-white">Shadow_Ua</strong>, download releases, report issues, or support future development of the Ballistic Missile Mod.
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="https://discord.gg/tWkCHFEg9K" target="_blank" rel="noopener noreferrer" class="btn-steel px-6 py-3 rounded inline-flex items-center gap-2.5 text-base">
+                        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+                        Discord Server
+                    </a>
+
+                    <a href="https://modrinth.com/user/Shadow_Ua" target="_blank" rel="noopener noreferrer" class="btn-steel px-6 py-3 rounded inline-flex items-center gap-2.5 text-base">
+                        <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                        Modrinth
+                    </a>
+
+                    <a href="https://www.curseforge.com/members/shadow_uayt333/projects" target="_blank" rel="noopener noreferrer" class="btn-steel px-6 py-3 rounded inline-flex items-center gap-2.5 text-base">
+                        <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        CurseForge
+                    </a>
+
+                    <a href="https://github.com/Shadow16Ua" target="_blank" rel="noopener noreferrer" class="btn-steel px-6 py-3 rounded inline-flex items-center gap-2.5 text-base">
+                        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+
+                    <a href="https://buymeacoffee.com/viktorkovae" target="_blank" rel="noopener noreferrer" class="btn-explosion px-6 py-3 rounded inline-flex items-center gap-2.5 text-base">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        Buy Me a Coffee
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         10. FOOTER
+    =========================================== -->
+    <footer class="bg-[#07090c] border-t border-[#2a3444] py-10 px-4 sm:px-6 lg:px-8 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-3">
+                <span class="font-tactical text-lg font-bold text-white tracking-wider">
+                    BALLISTIC <span class="text-orange-500">MISSILE</span> MOD
+                </span>
+                <span>•</span>
+                <span>Created by <strong class="text-slate-200">Shadow_Ua</strong></span>
+                <span>•</span>
+                <span>Published on Modrinth</span>
+            </div>
+            <div class="text-center sm:text-right font-mono-tech text-[11px] text-slate-500">
+                Not affiliated with Mojang or Microsoft. Minecraft is a trademark of Mojang Synergies AB.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         SCREENSHOT LIGHTBOX MODAL
+    =========================================== -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Screenshot Lightbox">
+        <div class="max-w-5xl w-full steel-panel corner-brackets rounded-lg overflow-hidden">
+            <div class="flex items-center justify-between px-4 py-3 bg-[#0c1017] border-b border-[#2a3444]">
+                <span id="lightbox-caption" class="font-mono-tech text-xs text-slate-200">Screenshot Preview</span>
+                <button type="button" onclick="closeLightbox()" class="text-slate-400 hover:text-orange-500 font-mono-tech text-sm px-2 py-0.5 rounded border border-transparent hover:border-orange-500/40">
+                    [ESC / CLOSE ✕]
+                </button>
+            </div>
+            <div class="p-2 bg-[#080a0e] flex items-center justify-center">
+                <img id="lightbox-img" src="" alt="Expanded Screenshot" class="max-h-[78vh] w-auto object-contain rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         VANILLA JAVASCRIPT
+    =========================================== -->
+    <script>
+        /* ==========================================
+           MOBILE NAVIGATION MENU
+        =========================================== */
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    iconOpen.classList.add('hidden');
+                    iconClose.classList.remove('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'true');
+                } else {
+                    closeMobileMenu();
+                }
+            });
+        }
+
+        function closeMobileMenu() {
+            if (!mobileMenu) return;
+            mobileMenu.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        /* ==========================================
+           SCREENSHOT LIGHTBOX
+        =========================================== */
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        function openLightbox(imgUrl, captionText) {
+            if (!lightboxModal) return;
+            lightboxImg.src = imgUrl;
+            lightboxCaption.textContent = captionText || 'Screenshot Preview';
+            lightboxModal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            if (!lightboxModal) return;
+            lightboxModal.classList.add('hidden');
+            lightboxImg.src = '';
+        }
+
+        if (lightboxModal) {
+            lightboxModal.addEventListener('click', (e) => {
+                if (e.target === lightboxModal) closeLightbox();
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        /* ==========================================
+           FAQ ACCORDION
+        =========================================== */
+        document.querySelectorAll('.faq-trigger').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+                document.querySelectorAll('.faq-trigger').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.textContent = '−';
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        /* ==========================================
+           SCROLL FADE-IN OBSERVER
+        =========================================== */
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
