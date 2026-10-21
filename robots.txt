@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shadow16ua.github.io/ballistic-missile-mod/sitemap.xml

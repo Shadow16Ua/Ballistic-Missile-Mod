@@ -705,9 +705,7 @@
             }
         });
 
-        /* ==========================================
-           FAQ ACCORDION
-        =========================================== */
+        /* FAQ ACCORDION */
         document.querySelectorAll('.faq-trigger').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -727,9 +725,7 @@
             });
         });
 
-        /* ==========================================
-           SCROLL FADE-IN OBSERVER
-        =========================================== */
+        /* SCROLL FADE-IN OBSERVER */
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
