@@ -360,46 +360,54 @@
                         <h2 class="text-3xl font-bold text-white mb-4">Ordnance &amp; Block Specifications Table</h2>
                         <div class="overflow-x-auto">
                             <table class="w-full text-left border-collapse text-sm">
+                                <caption class="sr-only">Specifications of the Ballistic Missile Mod missiles and blocks: category, range or footprint, blast yield and speed</caption>
                                 <thead>
                                     <tr class="border-b border-[#2a3444] font-mono-tech text-xs text-orange-400 uppercase">
-                                        <th class="py-3 px-4">Item / Block</th>
-                                        <th class="py-3 px-4">Category</th>
-                                        <th class="py-3 px-4">Range / Footprint</th>
-                                        <th class="py-3 px-4">Blast Radius / Yield</th>
-                                        <th class="py-3 px-4">Flight / Terminal Speed</th>
+                                        <th scope="col" class="py-3 px-4">Item / Block</th>
+                                        <th scope="col" class="py-3 px-4">Category</th>
+                                        <th scope="col" class="py-3 px-4">Range / Footprint</th>
+                                        <th scope="col" class="py-3 px-4">Blast Radius / Yield</th>
+                                        <th scope="col" class="py-3 px-4">Flight / Terminal Speed</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-[#222b38] text-slate-300">
                                     <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Standard Missile</td>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Standard Missile</th>
                                         <td class="py-3 px-4">Tactical Missile</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">Medium-Range (65° Rail Launch)</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">8m Blast / 35m Lethal Shockwave (160 DMG)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">8.0 Power / 160 DMG (within 6m) / 35m Shockwave</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">1.5 blocks/tick (Ascent) &rarr; 2.0 b/t (Terminal)</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Heavy Missile</td>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Heavy Missile</th>
                                         <td class="py-3 px-4">High-Yield Strategic</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">Unlimited (90° Vertical Launch)</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Massive Crater + 140m Seismic Wave + Thermal Burn</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Massive Crater + 140m Seismic Shockwave + Thermal Burn</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">Extreme Terminal Dive (2-Hit Armored Hull)</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Launch Pad</td>
-                                        <td class="py-3 px-4">Animated 3D Structure</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-200">3.4 x 4.2m Footprint (Dual-Mode Rails)</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">65° Inclined / 90° Vertical</td>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Interceptor Missile</th>
+                                        <td class="py-3 px-4">Defensive Ammunition</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">8s (160 ticks) Flight Window</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">5.5-block Proximity Fuze (1 Armor Layer DMG)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-orange-400">5.2 blocks/tick Homing Velocity</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Coordinate Terminal</td>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Launch Pad</th>
+                                        <td class="py-3 px-4">Animated 3D Multiblock</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-200">3x3 Multiblock (3.4 &times; 4.2m 3D Model)</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
+                                        <td class="py-3 px-4 font-mono-tech text-slate-500">65° Inclined / 90° Vertical Rails</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Coordinate Terminal</th>
                                         <td class="py-3 px-4">Control Block</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">5-Block Radius Link to Launch Pad (v5.0.0+)</td>
                                         <td class="py-3 px-4 font-mono-tech text-slate-500">N/A (Redstone Triggered)</td>
                                         <td class="py-3 px-4 font-mono-tech text-slate-500">Instant Ignition</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-3 px-4 font-semibold text-white">Anti-Air System</td>
+                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Anti-Air System</th>
                                         <td class="py-3 px-4">Automated Defense</td>
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">Automated Airspace Radar Scan</td>
                                         <td class="py-3 px-4 text-slate-300">Fires Homing Interceptors</td>

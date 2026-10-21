@@ -9,10 +9,9 @@
          NOTE: Ensure your GitHub repo is named "Ballistic-Missile-Mod"
          so GitHub Pages publishes to https://shadow16ua.github.io/Ballistic-Missile-Mod/
     =========================================== -->
-    <title>Ballistic Missile Mod (1.20.1 Forge) — ICBM, Anti-Air & Launch Pads | Shadow_Ua</title>
+    <title>Ballistic Missile Mod for Minecraft 1.20.1 (Forge) — Missiles, Launch Pads &amp; Anti-Air | Shadow_Ua</title>
     <meta name="description" content="Download the Ballistic Missile Mod for Minecraft Java 1.20.1 (Forge). Adds physics-driven Standard & Heavy Missiles, 3D Launch Pads, Coordinate Terminals, and automated Anti-Air Interceptor Systems by Shadow_Ua.">
     <meta name="author" content="Shadow_Ua">
-    <meta name="keywords" content="Minecraft mod, Ballistic Missile Mod, Forge 1.20.1, GeckoLib 4, Shadow_Ua, Minecraft missiles, Modrinth, Minecraft ICBM mod, Anti-Air System">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://shadow16ua.github.io/Ballistic-Missile-Mod/">
 
@@ -25,6 +24,9 @@
     <meta property="og:description" content="Take control of the skies and redefine warfare in Minecraft. Physics-driven ballistic missiles, animated 3D Launch Pads, Coordinate Terminals, and Anti-Air Systems.">
     <meta property="og:image" content="https://shadow16ua.github.io/Ballistic-Missile-Mod/images/ballistic_ready.webp">
     <meta property="og:image:alt" content="Ready Ballistic Missile on the 3D Launch Pad in Minecraft 1.20.1">
+
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
 
     <!-- Twitter / X Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -43,89 +45,115 @@
     <!-- Tailwind CSS CDN for utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <noscript>
+        <style>
+            .reveal-on-scroll { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
     <!-- ==========================================
          JSON-LD STRUCTURED DATA (Rich Snippets)
     =========================================== -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+    "@context": "https://schema.org",
+    "@graph": [
         {
-          "@type": "SoftwareApplication",
-          "name": "Ballistic Missile Mod",
-          "operatingSystem": "Windows, macOS, Linux (Minecraft Java Edition 1.20.1)",
-          "applicationCategory": "GameApplication",
-          "applicationSubCategory": "Minecraft Forge Mod",
-          "softwareVersion": "5.0.0-BETA",
-          "softwareRequirements": "Minecraft Java 1.20.1, Minecraft Forge, GeckoLib 4",
-          "author": {
-            "@type": "Person",
-            "name": "Shadow_Ua",
-            "url": "https://modrinth.com/user/Shadow_Ua",
-            "sameAs": [
-              "https://github.com/Shadow16Ua",
-              "https://www.curseforge.com/members/shadow_uayt333/projects"
-            ]
-          },
-          "description": "Adds long-range physics-driven ballistic weapons, animated 3D launch platforms, coordinate-based targeting terminals, and automated anti-air defense systems to Minecraft 1.20.1 Forge.",
-          "downloadUrl": "https://modrinth.com/mod/Ballistic-Missile-Mod/versions",
-          "installUrl": "https://www.curseforge.com/minecraft/mc-mods/Ballistic-Missile-Mod",
-          "screenshot": "https://shadow16ua.github.io/Ballistic-Missile-Mod/images/launchpad_terminal.webp",
-          "offers": {
+        "@type": "WebSite",
+        "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#website",
+        "url": "https://shadow16ua.github.io/ballistic-missile-mod/",
+        "name": "Ballistic Missile Mod",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#author" }
+        },
+        {
+        "@type": "Person",
+        "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#author",
+        "name": "Shadow_Ua",
+        "url": "https://modrinth.com/user/Shadow_Ua",
+        "sameAs": [
+            "https://modrinth.com/user/Shadow_Ua",
+            "https://www.curseforge.com/members/shadow_uayt333/projects",
+            "https://github.com/Shadow16Ua"
+        ]
+        },
+        {
+        "@type": "SoftwareApplication",
+        "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#mod",
+        "name": "Ballistic Missile Mod",
+        "description": "A Minecraft Java Edition 1.20.1 Forge mod that adds physics-driven ballistic missiles, an animated 3x3 multiblock Launch Pad, Coordinate Terminals and automated Anti-Air Systems.",
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Minecraft Forge Mod",
+        "operatingSystem": "Windows, macOS, Linux (Minecraft Java Edition 1.20.1)",
+        "softwareVersion": "5.0.0-BETA",
+        "softwareRequirements": "Minecraft Java 1.20.1, Minecraft Forge 1.20.1, GeckoLib 4",
+        "url": "https://shadow16ua.github.io/ballistic-missile-mod/",
+        "downloadUrl": "https://modrinth.com/mod/ballistic-missile-mod/versions",
+        "installUrl": "https://www.curseforge.com/minecraft/mc-mods/ballistic-missile-mod",
+        "image": "https://shadow16ua.github.io/ballistic-missile-mod/images/ballistic_ready.webp",
+        "screenshot": "https://shadow16ua.github.io/ballistic-missile-mod/images/launchpad_terminal.webp",
+        "author": { "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#author" },
+        "isPartOf": { "@id": "https://shadow16ua.github.io/ballistic-missile-mod/#website" },
+        "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-          }
-        },
-        {
-          "@type": "VideoObject",
-          "name": "Ballistic Missile Mod Official Trailer — Minecraft 1.20.1 Forge",
-          "description": "Official showcase trailer for the Ballistic Missile Mod by Shadow_Ua, demonstrating Standard Missiles, Heavy Missiles, 3D Launch Pads, and Anti-Air Interceptors.",
-          "thumbnailUrl": [
-            "https://i.ytimg.com/vi/qLr7gzv12p8/maxresdefault.jpg"
-          ],
-          "uploadDate": "2026-10-19",
-          "embedUrl": "https://www.youtube.com/embed/qLr7gzv12p8",
-          "contentUrl": "https://www.youtube.com/watch?v=qLr7gzv12p8"
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Which Minecraft versions and mod loaders are supported?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ballistic Missile Mod is built for Minecraft Java Edition 1.20.1 running on Forge, and requires GeckoLib 4 to be installed."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does the mod work in Multiplayer / on Servers?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Both the server and all connecting players must have Ballistic Missile Mod and GeckoLib 4 installed on Forge 1.20.1."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is it compatible with other mods or shaders?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The mod requires GeckoLib 4 on Forge 1.20.1."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I report bugs or suggest features?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can report bugs or share feedback via our community links below (Discord or GitHub issue tracker). Please include your Minecraft version (1.20.1), Forge version, GeckoLib 4 version, and crash logs if applicable."
-              }
-            }
-          ]
         }
-      ]
+        },
+        {
+        "@type": "VideoObject",
+        "name": "Ballistic Missile Mod Official Trailer — Minecraft 1.20.1 Forge",
+        "description": "Official showcase trailer for the Ballistic Missile Mod by Shadow_Ua.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/qLr7gzv12p8/hqdefault.jpg",
+        "uploadDate": "2026-10-19",
+        "embedUrl": "https://www.youtube.com/embed/qLr7gzv12p8",
+        "contentUrl": "https://www.youtube.com/watch?v=qLr7gzv12p8"
+        },
+        {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "Which Minecraft versions and mod loaders are supported?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ballistic Missile Mod is built for Minecraft Java Edition 1.20.1 running on Forge, and requires GeckoLib 4 to be installed." }
+            },
+            {
+            "@type": "Question",
+            "name": "Does the mod work in Multiplayer / on Servers?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both the server and all connecting players must have Ballistic Missile Mod and GeckoLib 4 installed on Forge 1.20.1." }
+            },
+            {
+            "@type": "Question",
+            "name": "Is it compatible with other mods or shaders?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The mod is designed for Forge 1.20.1 modpacks and requires GeckoLib 4 for 3D entity and block animations. It works alongside standard Forge mods; when using shaders, dynamic explosion flashes and custom smoke particles render in world space." }
+            },
+            {
+            "@type": "Question",
+            "name": "How do I report bugs or suggest features?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You can report bugs or share feedback via our community links below (Discord or GitHub). Please include your Minecraft version (1.20.1), Forge version, GeckoLib 4 version, and crash logs if applicable." }
+            },
+            {
+            "@type": "Question",
+            "name": "What does the Ballistic Missile Mod add to Minecraft?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It replaces standard TNT mechanics with physics-driven missile entities. The mod adds Standard, Heavy and Interceptor Missiles, a 3x3 multiblock Launch Pad, a Coordinate Terminal for entering target X and Z coordinates, and an automated Anti-Air System." }
+            },
+            {
+            "@type": "Question",
+            "name": "How do I launch a missile?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Place a Launch Pad and a Coordinate Terminal within 5 blocks of it, right-click the pad to load a Standard or Heavy Missile, enter the target X and Z coordinates in the terminal, then trigger it with a Redstone signal or the Remote Control. Heavy Missiles must first be raised to 90 degrees by right-clicking the pad with an empty hand." }
+            },
+            {
+            "@type": "Question",
+            "name": "Can the Anti-Air System stop a Heavy Missile?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Not reliably. A Heavy Missile has a reinforced hull with 2 armor points, and one Interceptor hit strips only one layer. Its steep, fast terminal descent also leaves interceptors a narrow reaction window. Standard Missiles, by contrast, are destroyed in a single hit." }
+            },
+            {
+            "@type": "Question",
+            "name": "How close must the Coordinate Terminal be to the Launch Pad?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Within a 5-block radius since version 5.0.0 (it was 3 blocks in older versions)." }
+            }
+        ]
+        }
+    ]
     }
     </script>
 
@@ -414,6 +442,33 @@
                     <p class="text-slate-400 text-base leading-relaxed">
                         Replaces standard TNT mechanics with long-range, physics-driven projectile entities, multiblock launch platforms, coordinate-based targeting terminals, and automated anti-air interception systems. Created by <strong class="text-slate-200">Shadow_Ua</strong>.
                     </p>
+                    
+                    <!-- Компактний бейдж, який відкриває специфікації при наведенні (hover / focus) -->
+                    <div class="relative inline-block group z-20">
+                        <!-- Тригер-кнопка (займає мінімум місця) -->
+                        <button type="button" class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-[#11161f] border border-[#2a3444] group-hover:border-orange-500/60 text-xs font-mono-tech text-slate-300 transition cursor-pointer focus:outline-none">
+                            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                            <span>MOD SPECS &amp; INFO</span>
+                            <span class="text-orange-400 font-semibold">[FREE // v5.0.0 BETA]</span>
+                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-orange-400 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+
+                        <!-- Спливаюче вікно з таблицею (показується тільки при наведенні або кліку) -->
+                        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-200 absolute left-0 top-full mt-2 w-80 sm:w-96 p-4 rounded-lg bg-[#0e1218]/95 backdrop-blur-md border border-orange-500/50 shadow-[0_12px_32px_rgba(0,0,0,0.85)] pointer-events-none group-hover:pointer-events-auto">
+                            <dl class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-300 font-mono-tech">
+                                <dt class="text-slate-500">Mod name</dt>        <dd>Ballistic Missile Mod</dd>
+                                <dt class="text-slate-500">Author</dt>          <dd>Shadow_Ua</dd>
+                                <dt class="text-slate-500">Game</dt>            <dd>Minecraft: Java 1.20.1</dd>
+                                <dt class="text-slate-500">Mod loader</dt>      <dd>Forge 1.20.1</dd>
+                                <dt class="text-slate-500">Requires</dt>        <dd>GeckoLib 4</dd>
+                                <dt class="text-slate-500">Latest version</dt>  <dd>5.0.0 BETA (<time datetime="2026-10-19">2026-10-19</time>)</dd>
+                                <dt class="text-slate-500">Price</dt>           <dd class="text-orange-400">Free</dd>
+                                <dt class="text-slate-500">Download</dt>        <dd>Modrinth, CurseForge</dd>
+                            </dl>
+                        </div>
+                    </div>
 
                     <!-- Primary CTA Buttons -->
                     <div id="download-cta" class="flex flex-col sm:flex-row gap-4 pt-2">
@@ -655,10 +710,10 @@
                 </div>
 
                 <!-- 4 Core Steps Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 list-none p-0 m-0">
                     
                     <!-- Step 1 -->
-                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                    <li class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
                         <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
                             01
                         </div>
@@ -667,10 +722,10 @@
                         <p class="text-slate-300 text-sm">
                             Place the animated 3D <strong class="text-white">Launch Pad</strong> on a clear firing site and position a <strong class="text-white">Coordinate Terminal</strong> within a 5-block radius <span class="text-xs text-slate-400 font-mono-tech">(v5.0.0+; 3 blocks in older versions)</span>.
                         </p>
-                    </div>
+                    </li>
 
                     <!-- Step 2 -->
-                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                    <li class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
                         <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
                             02
                         </div>
@@ -679,10 +734,10 @@
                         <p class="text-slate-300 text-sm">
                             Right-click the pad to load a <strong class="text-white">Standard</strong> or <strong class="text-white">Heavy Missile</strong> onto the rails. For Heavy Missiles, right-click with an empty hand to raise the launcher vertically (90°).
                         </p>
-                    </div>
+                    </li>
 
                     <!-- Step 3 -->
-                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                    <li class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
                         <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
                             03
                         </div>
@@ -691,10 +746,10 @@
                         <p class="text-slate-300 text-sm">
                             Enter target <strong class="text-white">X and Z</strong> coordinates in the <strong class="text-white">Coordinate Terminal</strong> (or Shift + Right-Click a block using the portable <strong class="text-white">Remote Control</strong>).
                         </p>
-                    </div>
+                    </li>
 
                     <!-- Step 4 -->
-                    <div class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
+                    <li class="steel-panel rounded-lg p-6 relative reveal-on-scroll">
                         <div class="font-tactical text-5xl font-bold text-orange-500/25 absolute top-3 right-4 select-none">
                             04
                         </div>
@@ -703,12 +758,12 @@
                         <p class="text-slate-300 text-sm">
                             Activate the terminal with a Redstone signal (button/lever) or Right-Click the pad with the <strong class="text-white">Remote Control</strong> to launch.
                         </p>
-                    </div>
+                    </li>
 
-                </div>
+                </ol>
 
                 <!-- Optional Step: Anti-Air Defense -->
-                <div class="mt-6 steel-panel corner-brackets rounded-lg p-6 border-l-4 border-l-orange-500 reveal-on-scroll">
+                <div class="mt-6 steel-panel rounded-lg p-6 border-l-4 border-l-orange-500 reveal-on-scroll">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div>
                             <div class="flex items-center gap-2 mb-1">
@@ -805,28 +860,27 @@
 
                     <!-- Gallery Item 5 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+5+-+Anti-Air+System+Firing+Interceptor', 'Automated Anti-Air System launching an Interceptor Missile')">
+                            onclick="openLightbox('./images/exp1.webp', 'Explosion of Ballistic Missile')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+5+(Anti-Air+Interceptor)" 
-                             alt="Anti-Air System launching Interceptor Missile" 
+                        <img src="./images/exp1.webp" 
+                             alt="Explosion of Ballistic Missile" 
                              width="640" height="360" loading="lazy" decoding="async"
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
-                            <span>05 // ANTI-AIR INTERCEPTOR LAUNCH</span>
+                            <span>05 // Explosion of Ballistic Missile</span>
                         </figcaption>
                     </figure>
 
                     <!-- Gallery Item 6 -->
                     <figure class="steel-panel rounded-lg overflow-hidden cursor-pointer group reveal-on-scroll"
-                            onclick="openLightbox('https://placehold.co/1280x720/11161f/ff5500?text=TODO:+Screenshot+6+-+Mid-Air+Interception', 'Interceptor Missile shooting down an incoming Standard Missile')">
+                            onclick="openLightbox('./images/exp2.webp', 'Ballistic Missile direct strike')">
                         <!-- TODO: Replace placeholder image URL -->
-                        <img src="https://placehold.co/640x360/11161f/ff5500?text=TODO:+Screenshot+6+(Mid-Air+Interception)" 
-                             alt="Mid-air interception of incoming missile threat" 
+                        <img src="./images/exp2.webp" 
+                             alt="Ballistic Missile direct strike" 
                              width="640" height="360" loading="lazy" decoding="async"
                              class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
                         <figcaption class="p-4 flex items-center justify-between text-xs font-mono-tech text-slate-300 border-t border-[#2a3444]">
-                            <span>06 // MID-AIR THREAT INTERCEPTION</span>
-                            <span class="text-orange-400">[REPLACE IMG]</span>
+                            <span>06 // Ballistic Missile direct strike</span>
                         </figcaption>
                     </figure>
 
@@ -1031,8 +1085,7 @@
                             <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
                         </button>
                         <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
-                            The mod requires <strong class="text-white">GeckoLib 4</strong> on Forge 1.20.1.
-                        </div>
+                            The mod is designed for <strong class="text-white">Forge 1.20.1</strong> modpacks and requires <strong class="text-white">GeckoLib 4</strong> for 3D entity and block animations. It works alongside standard Forge mods; when using shaders, dynamic explosion flashes and custom smoke particles render in world space.                        </div>
                     </div>
 
                     <!-- FAQ 4: How to Report Bugs -->
@@ -1046,6 +1099,49 @@
                         </div>
                     </div>
 
+                    <!-- FAQ 5 -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">What does the Ballistic Missile Mod add to Minecraft?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            It replaces standard TNT mechanics with physics-driven missile entities. The mod adds Standard, Heavy and Interceptor Missiles, a 3x3 multiblock Launch Pad, a Coordinate Terminal for entering target X and Z coordinates, and an automated Anti-Air System.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">How do I launch a missile?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            Place a Launch Pad and a Coordinate Terminal within 5 blocks of it, right-click the pad to load a Standard or Heavy Missile, enter the target X and Z coordinates in the terminal, then trigger it with a Redstone signal or the Remote Control. Heavy Missiles must first be raised to 90° by right-clicking the pad with an empty hand.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">Can the Anti-Air System stop a Heavy Missile?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            Not reliably. A Heavy Missile has a reinforced hull with 2 armor points, and one Interceptor hit strips only one layer. Its steep, fast terminal descent also leaves interceptors a narrow reaction window. Standard Missiles, by contrast, are destroyed in a single hit.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="steel-panel rounded-lg overflow-hidden reveal-on-scroll">
+                        <button type="button" class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-tactical text-xl font-bold text-white">How close must the Coordinate Terminal be to the Launch Pad?</span>
+                            <span class="faq-icon text-orange-500 font-mono-tech text-xl transition-transform duration-200">+</span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-slate-300 border-t border-[#242e3d] pt-3">
+                            Within a 5-block radius since version 5.0.0 (it was 3 blocks in older versions).
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
