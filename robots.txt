@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
+ 
 Sitemap: https://shadow16ua.github.io/Ballistic-Missile-Mod/sitemap.xml
