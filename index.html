@@ -496,16 +496,34 @@
                 <div class="lg:col-span-6">
                     <div class="steel-panel corner-brackets rounded-lg p-2 shadow-2xl">
                         <div class="relative aspect-video rounded bg-[#0c1017] border border-[#2a3444] overflow-hidden">
-                            <iframe src="https://www.youtube.com/embed/qLr7gzv12p8?rel=0&modestbranding=1&playsinline=1"
-                                    title="Ballistic Missile Mod trailer"
-                                    class="w-full h-full"
-                                    loading="lazy"
-                                    frameborder="0"
-                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen>
-                            </iframe>
+                            <!-- Легкий фасад YouTube (завантажує плеєр лише при кліку, економить 550 KiB JS) -->
+                                <!-- Варіант 1: Тактична темна HUD-кнопка Play -->
+                                <button type="button" 
+                                        onclick="this.outerHTML='<iframe src=\'https://www.youtube.com/embed/qLr7gzv12p8?autoplay=1&rel=0&modestbranding=1&playsinline=1\' title=\'Ballistic Missile Mod trailer\' class=\'w-full h-full\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>'"
+                                        class="relative w-full h-full block group focus:outline-none cursor-pointer bg-black overflow-hidden"
+                                        aria-label="Play Ballistic Missile Mod Official Trailer">
+                                    <img src="https://i.ytimg.com/vi/qLr7gzv12p8/maxresdefault.jpg" 
+                                        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/qLr7gzv12p8/hqdefault.jpg';"
+                                        alt="Ballistic Missile Mod Official Trailer Thumbnail" 
+                                        width="1280" height="720" fetchpriority="high" decoding="async"
+                                        class="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition duration-500">
+                                    
+                                    <!-- Затемнення по центру для контрасту -->
+                                    <span class="absolute inset-0 bg-radial from-black/40 via-transparent to-transparent"></span>
 
+                                    <!-- Тактична кнопка Play -->
+                                    <span class="absolute inset-0 flex items-center justify-center">
+                                        <!-- Зовнішнє пульсуюче кільце при наведенні -->
+                                        <span class="absolute w-20 h-20 rounded-full border border-orange-500/40 scale-95 group-hover:scale-125 group-hover:border-orange-500/0 transition-all duration-500"></span>
+                                        
+                                        <!-- Основна капсула кнопки -->
+                                        <span class="relative w-16 h-16 rounded-full bg-[#0a0c10]/85 backdrop-blur-md border-2 border-orange-500 flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.9),0_0_15px_rgba(255,85,0,0.5)] group-hover:bg-orange-500 group-hover:scale-110 transition-all duration-300">
+                                            <svg class="w-7 h-7 text-white group-hover:text-black transition-colors duration-300 translate-x-[2px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                <path d="M6 4.75L19.25 12L6 19.25V4.75Z"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </button>
                             <!-- HUD Telemetry Footer Bar -->
                             <div class="absolute bottom-0 left-0 right-0 flex justify-between items-center text-[11px] font-mono-tech text-slate-300 bg-gradient-to-t from-black/80 to-transparent px-3 py-2 pointer-events-none">
                                 <span>CAM_FEED // TRAILER_BROADCAST</span>
