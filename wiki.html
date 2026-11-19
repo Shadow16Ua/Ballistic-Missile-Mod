@@ -342,7 +342,7 @@
                     </h1>
                 </div>
                 <span class="px-3 py-1.5 rounded bg-orange-500/10 border border-orange-500/40 text-orange-300 font-mono-tech text-xs">
-                   // v6.0.0 RELEASE • MC 1.20.1 FORGE //
+                   // v6.5.0 RELEASE • MC 1.20.1 FORGE //
                 </span>
             </div>
 
@@ -359,6 +359,7 @@
                                 <li><a href="#wiki-standard-missile" class="block px-3 py-1.5 rounded hover:bg-[#1e2634] text-slate-200 hover:text-orange-400 transition">Standard Missile</a></li>
                                 <li><a href="#wiki-heavy-missile" class="block px-3 py-1.5 rounded hover:bg-[#1e2634] text-slate-200 hover:text-orange-400 transition">Heavy Missile</a></li>
                                 <li><a href="#wiki-interceptor-missile" class="block px-3 py-1.5 rounded hover:bg-[#1e2634] text-slate-200 hover:text-orange-400 transition">Interceptor Missile</a></li>
+                                <li><a href="#wiki-kamikaze-drone" class="block px-3 py-1.5 rounded hover:bg-[#1e2634] text-slate-200 hover:text-orange-400 transition">Kamikaze Drone</a></li>
                             </ul>
                         </div>
 
@@ -429,6 +430,13 @@
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">5.2 blocks/tick Predictive Homing</td>
                                     </tr>
                                     <tr>
+                                      <th scope="row" class="py-3 px-4 text-left font-bold text-white">Kamikaze Drone</th>
+                                      <td class="py-3 px-4">Loitering Munition</td>
+                                      <td class="py-3 px-4 font-mono-tech text-orange-400">GPS Autopilot (35m Dive) / Manual FPV Mode</td>
+                                      <td class="py-3 px-4 font-mono-tech text-orange-400">5.0 Power Precision Strike</td>
+                                      <td class="py-3 px-4 font-mono-tech text-orange-400">1.15–1.38 b/t (Auto) &rarr; 0.75–1.65 b/t (FPV)</td>
+                                    </tr>
+                                    <tr>
                                         <th scope="row" class="py-3 px-4 text-left font-bold text-white">Launch Pad</th>
                                         <td class="py-3 px-4">Animated 3D Multiblock</td>
                                         <td class="py-3 px-4 font-mono-tech text-slate-200">3x3 Multiblock (3.4 &times; 4.2m 3D Model)</td>
@@ -457,11 +465,11 @@
                                         <td class="py-3 px-4 font-mono-tech text-orange-400">Shift+R-Click Lock &rarr; R-Click Terminal Upload</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row" class="py-3 px-4 text-left font-bold text-white">Early Warning Radar</th>
-                                        <td class="py-3 px-4">Detection Array</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">Long-Range Airspace Scan</td>
-                                        <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
-                                        <td class="py-3 px-4 font-mono-tech text-orange-400">HUD Threat Alerts (Class, Count, Distance, Direction)</td>
+                                      <th scope="row" class="py-3 px-4 text-left font-bold text-white">Early Warning Radar</th>
+                                      <td class="py-3 px-4">Detection</td>
+                                      <td class="py-3 px-4 font-mono-tech text-orange-400">350m – 1,200m (Altitude-Dependent)</td>
+                                      <td class="py-3 px-4 font-mono-tech text-slate-500">N/A</td>
+                                      <td class="py-3 px-4 font-mono-tech text-orange-400">[DRONE] / [TACTICAL] / [BALLISTIC] Alerts</td>
                                     </tr>
                                     <tr>
                                         <th scope="row" class="py-3 px-4 text-left font-bold text-white">Anti-Air System</th>
@@ -555,6 +563,35 @@
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
                                 <span class="font-mono-tech text-xs text-orange-400 mb-2">CREATIVE / SURVIVAL RECIPE SOON</span>
+                                <div class="mc-crafting-grid">
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                    <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Wiki Item 3.5: Kamikaze Drone -->
+                    <section id="wiki-kamikaze-drone" class="steel-panel rounded-lg p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#2a3444] pb-3 mb-4">
+                            <h3 class="text-2xl font-bold text-white">3.5 Kamikaze Drone</h3>
+                            <span class="font-mono-tech text-xs px-2.5 py-1 rounded bg-[#0c1017] border border-[#2a3444] text-orange-400">LOITERING MUNITION</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-3 text-sm text-slate-300">
+                                <p>
+                                    The <strong class="text-white">Kamikaze Drone</strong> is a dual-mode loitering munition designed for surgical strikes. It can operate either via GPS Autopilot—climbing to a calculated cruising altitude before pitching down into a sharp terminal dive at 35 meters out—or in Manual FPV Mode, allowing direct first-person piloting with a live tactical HUD.
+                                </p>
+                                <ul class="font-mono-tech text-xs space-y-1 text-slate-400">
+                                    <li>• FLIGHT PROFILE: Dynamic cruise altitude (+15m to +45m above target) with banking roll turns</li>
+                                    <li>• TERMINAL DIVE: Pitches nose-down at 35m horizontal distance; locks dive vector through craters</li>
+                                    <li>• ACOUSTICS: <span class="text-orange-400">Distance-scaled engine buzz that realistically cuts off during the final dive</span></li>
+                                    <li>• FPV MANUAL CONTROL: Empty-hand RMB on a loaded launcher toggles FPV mode. Launches without GPS lock; steer with mouse, adjust throttle (0.75–1.65 b/t) via W/S, with artificial horizon HUD and signal-loss transition on impact</li>
+                                </ul>
+                            </div>
+                            <div class="md:col-span-5 flex flex-col items-center">
+                                <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
                                 <div class="mc-crafting-grid">
                                     <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
                                     <div class="mc-slot">SOON</div><div class="mc-slot">SOON</div><div class="mc-slot">SOON</div>
@@ -670,8 +707,11 @@
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                             <div class="md:col-span-7 space-y-3 text-sm text-slate-300">
                                 <p>
-                                    The <strong class="text-white">Early Warning Radar</strong> continuously monitors surrounding airspace for hostile launches. When incoming ordnance is detected, it broadcasts real-time telemetry alerts to nearby players—displaying threat classification (<span class="font-mono-tech text-xs text-orange-400">TACTICAL</span> or <span class="font-mono-tech text-xs text-red-400">BALLISTIC</span>), salvo count, distance in meters, and cardinal approach direction.
+                                    The <strong class="text-white">Early Warning Radar</strong> monitors surrounding airspace for hostile launches and broadcasts real-time alerts classifying incoming <span class="font-mono-tech text-xs text-orange-400">[DRONE]</span>, <span class="font-mono-tech text-xs text-orange-400">[TACTICAL]</span>, and <span class="font-mono-tech text-xs text-red-400">[BALLISTIC]</span> threats with salvo count, distance, and approach direction.
                                 </p>
+                                <ul class="font-mono-tech text-xs space-y-1 text-slate-400">
+                                    <li>• ALTITUDE-SCALED RANGE: Scanning radius dynamically scales from <span class="text-orange-400">350m</span> (low terrain/canyons) up to <span class="text-orange-400">1,200m</span> when placed at high altitude</li>
+                                </ul>
                             </div>
                             <div class="md:col-span-5 flex flex-col items-center">
                                 <span class="font-mono-tech text-xs text-slate-400 mb-2">CRAFTING RECIPE SOON</span>
